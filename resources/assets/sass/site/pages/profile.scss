@@ -1,0 +1,560 @@
+.profile-page {
+    max-width: 1165px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #4b3e3e;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description {
+        .main-text {
+            font-family: BarlowLight;        
+            box-shadow: 0px 0px 10px rgba(1, 1, 1, .3);
+            padding: 40px 30px;
+
+            h2 {
+                font-size: 25px; 
+            }
+        }
+
+        .event-anonce {
+            .anonce-wrapper {
+                box-shadow: 0px 0px 10px rgba(1, 1, 1, .3);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 21px 0px;
+                background: #fff79b;
+
+                .anonce-title {
+                    font-family: BarlowBold;
+                    font-size: 26px;
+                    color: #666666;
+                }
+
+                .anonce-text {
+                    font-family: BarlowRegular;
+                    font-size: 22px;
+                    color: #666666;
+                }
+
+                .anonce-price {
+                    font-family: BarlowRegular;
+                    font-size: 27px;
+                    color: #bfd518;
+                }
+            }
+        }
+    }
+
+    .title {
+        font-family: BarlowBold;
+        color: #4b3e3e;
+        padding-bottom: 30px;
+
+        
+    }
+
+    .black-btn {
+        font-family: Barlow;
+        font-size: 21px;
+        padding: 10px 27px;
+        background: black;
+        color: #ecff2d;
+
+        &:hover {
+            color: #abb820;
+        }
+    }
+
+    .info {
+        .info-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+
+            .info-title {
+                font-family: BarlowBold;
+                padding: 6px 0px;
+                background: black;
+                color: white;
+                text-align: center;
+                font-size: 21px;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    border: 10px solid black;
+                    right: -10px;
+                    bottom: 0px;
+                    z-index: 100;
+                    overflow: hidden;
+                    top: 0px;
+                }
+
+                &:after {
+                    content: "";
+                    border: 10px solid black;
+                    position: absolute;
+                    right: -15px;
+                    bottom: -9px;
+                    border-top: 44px solid;
+                    top: 0;
+                    border-bottom: 6px solid;
+                    border-right: 5px solid;
+                }
+            }
+
+            .info-details {
+                div {
+                    padding: 10px;
+                    font-family: Barlow;
+                    font-size: 17px;
+                    position: relative;           
+                    
+                    i {
+                        font-size: 17px;
+                    }
+
+                    span {
+                        color: #929292;
+                    }
+                }
+            }
+
+            .info-social {
+                div {
+                    padding: 5px 0px;
+                    color: white;
+                    font-size: 22px;
+                }
+
+                .facebook {
+                    background: #8093bb;
+                }
+
+                .twitter {
+                    background: #34bdf1;
+                }
+
+                .youtube {
+                    background: #fd4426;
+                }
+            }
+        }
+    }
+}
+
+.text-side-box {
+    max-width: 1165px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    .text-side-card {
+        box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+        .text-side-wrapper {
+            // height: 275px;
+
+            .image-header {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+
+                .card-title {
+                    font-family: BarlowSemiBold;
+                    font-size: 27px;
+                    color: #c3060d;
+                }
+
+                .card-text {
+                    font-family: BarlowRegular;
+                    font-size: 18px;
+                    color: #4d4c4c;
+                }
+
+                .content-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card-btn {
+                        font-family: BarlowRegular;
+                        font-size: 17px;
+                        color: #000000;
+    
+                        &:hover {
+                            color: #4d4c4c;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.upcoming-event-card {
+    max-height: 115px;
+
+    .event-wrapper {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        margin: 0;
+        overflow: hidden;
+        max-height: 115px;
+
+        .image-header {
+            width: 22%;
+            padding-left: 0;
+            padding-right: 0;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: auto;
+                max-height: 115px;
+                width: auto;
+            }
+        }
+
+        .content {
+            border-right: 1px solid #dddcd7;
+            padding: 0;
+
+            .header {
+                border-bottom: 1px solid #dddcd7;
+                height: 49%;
+                overflow: hidden;
+                font-family: Barlow;
+
+                .title {
+                    display: block;
+                    color: #000000;
+                    font-size: 15px;
+                    padding: 0px 0px 0px 20px;
+                    font-family: Barlow;
+
+                    .time {
+                        padding-left: 20px;
+                        font-size: 17px;
+                        font-family: 'DINCond-Medium';
+                    }
+                }
+
+                .additional-title {
+                    font-size: 18px;
+                    color: #000000;
+                    padding: 0px 0px 10px 20px;
+
+                    .time {
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+            .footer {
+                height: 51.5%;
+                
+                .date {
+                    display: inline-flex;
+                    border-right: 1px solid #dddcd7;
+                    justify-content: center;
+                    width: 35%;
+                    height: 99%;
+                    padding-right: 2%;
+
+                    .text {
+                        color: #000000;
+                        font-size: 19px;
+                        font-family: 'DINCond-Medium';
+                        position: relative;
+                        width: 40px;
+                        padding-top: 8%;
+
+                        span {
+                            display: inline-block;
+                            font-size: 27px;
+                            color: #c1060f;
+                            font-family: 'DINCond-Bold';
+                            position: absolute;
+                            bottom: 0px;
+                            padding-top: 6px;
+                            right: -5px;
+
+                            &:before {
+                                width: 1px;
+                                height: 26px;
+                                background: #c1060f;
+                                content: '';
+                                position: absolute;
+                                top: 3px;
+                                left: 0px;
+                                transform: rotate(50deg);
+                            }
+                        }
+                    }
+                }
+
+                .description {
+                    display: inline-flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    width: 60%;
+                    padding-right: 6%;
+                    padding-left: 6%;
+
+                    .text {
+                        margin-bottom: 0;
+                        float: left;
+                        color: #000000;
+                        font-size: 15px;
+                        font-family: 'DINCond-Medium';
+                        padding-bottom: 0px;
+                    }
+
+                    a {
+                        color: #2c82d3;
+                        font-size: 13px;
+                        font-family: 'DINCond-Medium';
+                        display: flex;
+                        align-items: center;
+
+                        div {
+                            width: 15px;
+                            height: 15px;
+                            display: inline-flex;
+                            align-items: center;
+                            background: #0283ff;
+                            color: white;
+                            border-radius: 50%;
+                            font-size: 25px;
+                            padding-bottom: 2px;
+                            padding-left: 1.5px;
+                            font-family: BarlowLight;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .read-more {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+
+.our-services {
+    max-width: 1165px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #4b3e3e;
+
+    h2 {
+        font-family: BarlowBold;
+        color: #4b3e3e;
+        padding-bottom: 15px;
+    }
+}
+
+.our-events {
+    max-width: 1165px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #4b3e3e;
+
+    &>h2 {
+        font-family: BarlowBold;
+        color: #4b3e3e;
+        padding-bottom: 15px;
+    }
+}
+
+/*.adventure-profile-page {
+    .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+        font-size: 14px;
+    }
+}*/
+
+.service-card {
+    .service-wrapper {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: BarlowLight;
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            background: #a2b60b;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding-left: 5px;
+            font-size: 20px;
+            color: #000000;
+            transition: all ease-in-out .5s;
+            cursor: pointer;
+            box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+
+            &:hover {
+                background: #e7ff20;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1082px) and (min-width: 768px) {
+    .upcoming-event-card {
+        .event-wrapper {
+            max-height: 100px;
+
+            .content {
+                .header {
+                    height: 41%;
+
+                    .title {
+                        font-size: 12px;
+                        padding-left: 5px;
+
+
+                        .time {
+                            font-size: 14px;
+                            padding-left: 5px;
+                        }
+                    }
+
+                    .additional-title {
+                        font-size: 14px;
+                        padding-left: 5px;
+                    }
+                }
+
+                .footer {
+                    height: 60.5%;
+
+                    .date {
+                        .text {
+                            padding-top: 0%;
+
+                            span {
+                                bottom: 3px;
+                            }
+                        }
+                    }
+
+                    .description {
+                        .text {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .profile-page {
+        .info {
+            .title {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .adventure-service-card {
+        width: 100% !important; 
+        flex: 0 0 100%;
+        max-width: 100%;    
+    }
+
+    .upcoming-event-card {
+        .event-wrapper {
+            position: relative;
+
+            .image-header {
+                position: absolute;
+            }
+
+            .content {
+                padding-left: 22%;
+                
+                .header {
+                    .title {
+                        padding-left: 5px;
+
+                        .time {
+                            padding-left: 5px;
+                        }
+                    }
+
+                    .additional-title {
+                        padding-left: 5px;
+                    }
+                }
+
+                .footer {
+                    .date {
+                        .text {
+                            padding-top: 3%;
+
+                            span {
+                                bottom: -2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
